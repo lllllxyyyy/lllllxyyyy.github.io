@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人网页</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style type="text/css">
+    /* 应用于整个游戏容器 */
+    #gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* 使容器至少和视口一样高 */
+    text-align: center;
+    margin-top: -300px;
+    }
+
+    /* 应用于图片和选项，确保它们在容器中居中 */
+    #gameImage {
+    max-width: 30%; /* 根据需要调整 */
+    margin-bottom: -50px; /* 为图片和选项之间提供一些空间 */
+    margin-left: -100px;
+    }
+
+    .option1 {
+    cursor: pointer;
+    margin: -50px 0; /* 为选项之间提供一些空间 */
+    margin-top: -150px;
+    margin-left: 50px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px; /* 轻微的圆角 */
+    color:#343434;
+    }
+
+    /* 可选：添加一些悬停效果以改善用户体验 */
+    .option:hover {
+    background-color: #e0e0e0;
+    }
+  .option {
+      margin: 5px;
+      padding: 10px;
+      background-color: #f4f4f4;
+      display: inline-block;
+      cursor: pointer;
+  }
+  .option:hover {
+      background-color: #ddd;
+  }
+  .scrollspy-example {
+     position: relative;
+     height: 350px;
+     overflow: auto;
+   }
+   video {
+     height: 100%;
+     width: 100%;
+   }
+   h1 {
+     text-align: center;
+   }
+   .section-with-background {
+            background-image: url('13.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px; /* 设置高度以便能够看到背景图片 */
+            /* 其他样式 */
+    }
+    .section2-with-background {
+             background-image: url('13.jpg');
+             background-size: cover;
+             background-position: center;
+           }
+    .section3-with-background {
+                    background-image: url('26.jpg');
+                    background-size: cover;
+                    background-position: center;
+                  }
+    .section4-with-background {
+                      background-image: url('11.jpg');
+                      background-size: cover;
+                      background-position: center;
+                  }
+    img {
+           position: relative;
+           top: 30px;
+           left: 80px;
+         }
+</style>
+</head>
+  <body data-bs-spy="scroll"data-bs-target=".navbar"data-bs-offset="50">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<div class="container-fluid">
+   <ul class="navbar-nav">
+     <li class="nav-item">
+      <a class="nav-link"href="#section1">手书</a>
+     </li>
+   <li class="nav-item">
+     <a class="nav-link"href="#section3">人物介绍</a>
+   </li>
+   <li class="nav-item">
+     <a class="nav-link"href="#section4">国家/地区</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link"href="#section5">势力划分</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link"href="#section6">小游戏</a>
+    </li>
+  </ul>
+ </div>
+</nav>
+<div id="section1"class="container-fluid text-dark section-with-background"style="padding:100px 20px;">
+  <h1 class="display-2">手书</h1>
+  <p style="color:#343434; text-align:center"><br>
+    <br>
+    OC为数不多的粮<br>
+    <br>
+    虽然画完之后立刻就觉得技术力不够，但就这样吧，谁让我是大学牲呢<br>
+  </p>
+</div>
+<div id="section2"class="container-fluid bg-dark text-white"style="padding:100px 20px;">
+  <p style="font-size:50px; color:#d0c7bc; text-align:center">
+    分镜<br>
+  </p>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" style="height: 60%;width: 60%;margin:0 auto">
+      <div class="carousel-item active">
+        <img src="1.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="2.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="3.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="4.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="5.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="6.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="7.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="8.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="9.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="10.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="11.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="12.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="13.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="14.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="15.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="16.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="17.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="18.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="19.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="20.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="21.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="22.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="23.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="24.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="25.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="26.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="27.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="28.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="29.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="30.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="31.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="32.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="33.jpg" class="d-block w-100">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <p style="font-size:50px; color:#d0c7bc; text-align:center"><br>
+    动画<br>
+    <div class="video-container" style="text-align:center">
+        <video id="myVideo" style="height: 80%; width: 80%" controls>
+            <source src="终版3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        function playVideo() {
+            var video = document.getElementById("myVideo");
+            video.play();
+        }
+    </script>
+  </p>
+</div>
+<div id="section3"class="container-fluid bg-secondary section2-with-background"style="padding:100px 20px;">
+ <h1 class="display-2">人物介绍</h1>
+ <p style="color:#343434; text-align:center"><br>
+   <br>
+   我为我的OC们写了本小说，但是没写完，以下所展示的人物信息后续有可能会修改<br>
+   <br>
+   其实我并不觉得OC们有主次之分，对于他们而言，他们就是他们生命的主导<br>
+   <br>
+   但是小说得有主次和视角，我个人精力也有限，只能尽量做到每一个出自我手的角色有他们自己的轨迹<br>
+   <br>
+ </p>
+ <div class="d-grid gap-2 col-4 mx-auto">
+ <a class="btn btn-dark" href="主要人物.html" role="button">主要人物</a>
+ <a class="btn btn-dark" href="次要人物.html" role="button">次要人物</a>
+ <a class="btn btn-dark" href="龙套.html" role="button">特别出演</a>
+</div>
+</div>
+
+</div>
+<div id="section4"class="container-fluid bg-dark text-white"style="padding:100px 20px;">
+<h1>国家/地区</h1>
+<p style="color:#d0c7bc; text-align:center"><br>
+  <br>
+  如果点开网页没有地图，要么是我没画完，要么是想要的效果没出来<br>
+  <br>
+  请不要拿我的世界观地图和真实的世界地图比对，完全不一样，这是架空世界观<br>
+  <br>
+  （点击图片即可跳转网页）
+</p>
+<a href="地图.html">
+    <img src="34.jpg" style="width: 1400px; height: 700px;">
+  </a>
+</div>
+<div id="section5"class="container-fluid text-white section3-with-background"style="padding:100px 20px;">
+<h1 class="display-2">势力划分</h1>
+<p style="color:#d0c7bc; text-align:center"><br>
+  <br>
+  还在建设中，暂无内容<br>
+  <br>
+  肝不动了，真的肝不动了，写了四十多个OC，还现搓了个地图，期末再完善吧<br>
+  <br>
+</p>
+</div>
+
+<div id="section6"class="container-fluid text-dark section2-with-background"style="padding:100px 20px;">
+ <h1 class="display-2">娱乐环节</h1>
+ <p style="color:#343434; text-align:center"><br>
+   <br>
+   下面是一个小游戏<br>
+   <br>
+   建议看过人物介绍之后再玩<br>
+   <br>
+   猜猜他们的名字吧~<br>
+   <br>
+ </p>
+</div>
+</div>
+<div id="section7"class="container-fluid bg-secondary section4-with-background"style="padding:100px 20px;">
+  <div id="gameContainer">
+  <img id="gameImage" src="" >
+</div>
+<div id="options" class="option1">
+  <!-- Options will be populated by JavaScript -->
+</div>
+
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+const totalImages = 26;
+const imageOptions = [
+  { src: "35.jpg", answer: "Criatti Enlil" },
+  { src: "36.jpg", answer: "Kusika Mo" },
+  { src: "37.jpg", answer: "Soulier Tidro" },
+  { src: "38.jpg", answer: "秦思暇" },
+  { src: "39.jpg", answer: "黒木響花" },
+  { src: "40.jpg", answer: "Anthony Charles Land" },
+  { src: "41.jpg", answer: "Couz Derick" },
+  { src: "42.jpg", answer: "Leano Hiss" },
+  { src: "43.jpg", answer: "Isha Solga" },
+  { src: "44.jpg", answer: "Salo Vinier" },
+  { src: "45.jpg", answer: "Miro Charles Land" },
+  { src: "46.jpg", answer: "Royal Katsura" },
+  { src: "47.jpg", answer: "Erica Solana" },
+  { src: "48.jpg", answer: "Vlard Ampulia" },
+  { src: "49.jpg", answer: "Monier Bailliston" },
+  { src: "50.jpg", answer: "Gabriel Rutherian" },
+  { src: "51.jpg", answer: "Gru bianca" },
+  { src: "52.jpg", answer: "Dew bianca" },
+  { src: "53.jpg", answer: "Moster" },
+  { src: "54.jpg", answer: "覃祐微" },
+  { src: "55.jpg", answer: "임유현" },
+  { src: "56.jpg", answer: "叶寂澜" },
+  { src: "57.jpg", answer: "안택원" },
+  { src: "58.jpg", answer: "Cesis Amboya" },
+  { src: "59.jpg", answer: "神戸千野" },
+  { src: "61.jpg", answer: "Lodrin Chirico" },
+]
+
+// Create a list of images and their corresponding answers
+//for (let i = 1; i <= totalImages; i++) {
+  //const imageName = "image" + i + ".jpg"; // Assuming images are named as image1.jpg, image2.jpg, etc.
+  //imageOptions.push({image: imageName, answer: i});
+//}
+
+function newGame() {
+  const selectedImageIndex = Math.floor(Math.random() * imageOptions.length);
+  const selectedImage = imageOptions[selectedImageIndex];
+
+  // Set the image. 应该使用 selectedImage.src 而不是 selectedImage.image
+  document.getElementById('gameImage').src = selectedImage.src;
+
+  // Randomly populate options
+  let options = [selectedImage.answer];
+  while (options.length < 4) {
+    let randomOptionIndex = Math.floor(Math.random() * imageOptions.length);
+    let randomOption = imageOptions[randomOptionIndex].answer;
+    if (!options.includes(randomOption)) {
+      options.push(randomOption);
+    }
+  }
+
+  // Shuffle the options
+  options.sort(() => Math.random() - 0.5);
+
+  // Display the options
+const optionsContainer = document.getElementById('options');
+optionsContainer.innerHTML = ''; // Clear existing options if there are any
+options.forEach(option => {
+  const optionElement = document.createElement('div');
+  optionElement.className = 'option';
+  // 使用模板字符串仅包含数字，去除了 "Option" 文字
+  optionElement.innerText = `${option}`;
+  optionElement.onclick = () => checkAnswer(selectedImage.answer, option);
+  optionsContainer.appendChild(optionElement);
+});
+}
+
+function checkAnswer(correctAnswer, selectedAnswer) {
+  if (correctAnswer === selectedAnswer) {
+    alert('答对啦~再考考你其他OC的名字~');
+    newGame();
+  } else {
+    alert('不是这个！宝宝要生气啦！');
+  }
+}
+
+// Initialize a new game when the page is fully loaded
+document.addEventListener('DOMContentLoaded', newGame);
+</script>
+
+  </body>
+</html>

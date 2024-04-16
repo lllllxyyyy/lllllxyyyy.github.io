@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>世界观地图</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style type="text/css">
+  .scrollspy-example {
+     position: relative;
+     height: 350px;
+     overflow: auto;
+   }
+   video {
+     height: 100%;
+     width: 100%;
+   }
+   h1 {
+     text-align: center;
+   }
+   .section-with-background {
+            background-image: url('34.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 900px; /* 设置高度以便能够看到背景图片 */
+            /* 其他样式 */
+    }
+    .section2-with-background {
+             background-image: url('34.jpg');
+             background-size: 160%;
+             background-position: -300px -170px;
+             height: 900px;
+           }
+    .section3-with-background {
+                    background-image: url('34.jpg');
+                    background-size: 160%;
+                    background-position: 0px -80px;
+                    height: 900px;
+          }
+    .section4-with-background {
+                          background-image: url('34.jpg');
+                          background-size: center;
+                          height: 430px;
+                }
+    .collapsible {
+       background-color: #343434;
+       cursor: pointer;
+       padding: 18px;
+       width: 7%;
+       border: none;
+       position: relative;
+       outline: none;
+       font-size: 15px;
+       color: #f1f1f1;
+       border-top-left-radius: 10px; /* 左上角圆角 */
+       border-top-right-radius: 10px; /* 右上角圆角 */
+       border-bottom-left-radius: 10px; /* 左上角圆角 */
+       border-bottom-right-radius: 10px; /* 右上角圆角 */
+     }
+
+     .content {
+       padding: 10px 18px;
+       display: none;
+       position: absolute;
+       width: 20%;
+       overflow: hidden;
+       background-color: #e9e9e9;
+       color: #343434;
+       border-top-left-radius: 10px; /* 左上角圆角 */
+       border-top-right-radius: 10px; /* 右上角圆角 */
+       border-bottom-left-radius: 10px; /* 左上角圆角 */
+       border-bottom-right-radius: 10px; /* 右上角圆角 */
+     }
+
+</style>
+</head>
+  <body data-bs-spy="scroll"data-bs-target=".navbar"data-bs-offset="50">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<div class="container-fluid">
+   <ul class="navbar-nav">
+     <li class="nav-item">
+      <a class="nav-link"href="#section1">总览</a>
+     </li>
+   <li class="nav-item">
+     <a class="nav-link"href="#section3">中部地区-殷夏洲</a>
+   </li>
+   <li class="nav-item">
+     <a class="nav-link"href="#section5">西部地区-尤沃伯洲</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link"href="#section7">东部地区-罗沙兰洲</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link"href="#section8">南部地区-洋中洲</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link"href="#section9">通行注意事项</a>
+    </li>
+  </ul>
+ </div>
+</nav>
+<div id="section1"class="container-fluid bg-dark text-white"style="padding:100px 20px;">
+  <h1 class="display-2">总览</h1>
+</div>
+<div id="section2"class="container-fluid bg-dark text-white section-with-background"style="padding:100px 20px;">
+  <button class="collapsible collapsed" id=collapsible1 style="top:250px;left:750px;">中部地区</button>
+<div class="content" id="content1" style="top:705px;left:700px;">
+  <p>中部大陆区，岷琅、汉古、伽伯莱桉、谟玛尔等国家都位于此。<br>
+    地势中间高四周低，河流呈放射状分布。<br>
+    主要宗教信仰为明教，塔塔特教，伊士卡拉教。
+  </p>
+</div>
+<button class="collapsible collapsed" id="collapsible2" style="top:170px;left:170px;">西部地区</button>
+<div class="content" id="content2" style="top:625px;left:170px;">
+<p>西部大陆区，西尔多、弗林、贝鲁卡、伊图林特等国家都位于此。<br>
+  地势西高东低，河流呈扇状分布。<br>
+  主要宗教信仰为拜尔教，新拜教。
+</p>
+</div>
+<button class="collapsible collapsed" id="collapsible3" style="top:300px;left:950px;">东部地区</button>
+<div class="content" id="content3" style="top:755px;left:1150px;">
+<p>东部大陆区，该区域暂未开放。
+</p>
+</div>
+<button class="collapsible collapsed" id="collapsible4" style="top:500px;left:250px;">南部地区</button>
+<div class="content" id="content4" style="top:895px;left:740px;">
+<p>南部大洋区，该区域暂未开放。
+</p>
+</div>
+</div>
+<div id="section3"class="container-fluid bg-secondary"style="padding:100px 20px;">
+ <h1 class="display-2">中部地区</h1>
+ <p style="color:#d0c7bc; text-align:center"><br>
+   <br>
+   中部大陆区，岷琅、汉古、伽伯莱桉、谟玛尔等国家都位于此。<br>
+   <br>
+     地势中间高四周低，河流呈放射状分布。<br>
+     <br>
+     主要宗教信仰为明教，塔塔特教，伊士卡拉教。<br>
+     <br>
+   </p>
+</div>
+<div id="section4"class="container-fluid text-white section2-with-background" style="padding:100px 20px;" section2-with-background>
+  <button class="collapsible collapsed" id=collapsible5 style="top:300px;left:800px;">岷琅</button>
+  <div class="content" id="content5" style="top:1905px;left:800px;">
+  <p>拥有千年历史的古国，据说是世界上唯一没有覆灭的古文明，<br>
+    曾经的历史因各种原因已不可考，不过在诸多博物馆内能够找到它们的蛛丝马迹。<br>
+    在经历了晋雍后期及夕微时代的天灾人祸后，如今的岷琅已渐渐恢复曾经的风光。
+  </p>
+  </div>
+  <button class="collapsible collapsed" id="collapsible2" style="top:530px;left:500px;">ガンバレユーカリ</button>
+  <div class="content" id="content2" style="top:2225px;left:300px;">
+  <p>与岷琅相邻的国家，初户时期曾多次展开外交活动，从一个落后小岛迅速发展成成型的国家，<br>
+    后于更越时期处于资源掠夺的需要，与西尔多，贝鲁卡一同发动战争。<br>
+    后在战争中落败，受贝鲁卡协助，现国内经济政治已逐渐步入正轨。
+  </p>
+  </div>
+  <button class="collapsible collapsed" id="collapsible3" style="top:450px;left:500px;">한고</button>
+  <div class="content" id="content3" style="top:2310px;left:800px;">
+  <p>历史记载残缺，可以考证的是曾有过被殖民的历史，在战争之后依靠贝鲁卡的援助迅速发展。
+  </p>
+  </div>
+  <button class="collapsible collapsed" id="collapsible4" style="top:400px;left:600px;">Momar</button>
+  <div class="content" id="content4" style="top:2195px;left:1090px;">
+  <p>缺少可供考据的历史纸质资料，步入现代国家进程较晚，且在战争中受害严重，至今仍作为大国之间扩张势力的斗争地。
+  </p>
+  </div>
+  <button class="collapsible collapsed" id="collapsible5" style="top:270px;left:30px;">Юкана</button>
+  <div class="content" id="content5" style="top:2065px;left:180px;">
+  <p>气候恶劣，物资匮乏的小国，辗转依附于其他国家受其援助而存。
+  </p>
+  </div>
+  <button class="collapsible collapsed" id="collapsible6" style="top:130px;left:40px;">Guillermo</button>
+  <div class="content" id="content6" style="top:1925px;left:310px;">
+  <p>以发展工业为主的国家，因为过度使用资源导致国内自然生态环境受损严重，正在想方设法改善环境。
+  </p>
+  </div>
+</div>
+
+<div id="section5"class="container-fluid bg-dark text-white"style="padding:100px 20px;">
+<h1 class="display-2">西部地区</h1>
+<p style="color:#d0c7bc; text-align:center"><br>
+  <br>
+  西部大陆区，西尔多、弗林、贝鲁卡、伊图林特等国家都位于此。<br>
+  <br>
+    地势西高东低，河流呈扇状分布。<br>
+    <br>
+    主要宗教信仰为拜尔教，新拜教。<br>
+    <br>
+  </p>
+</div>
+<div id="section6"class="container-fluid text-white section3-with-background" style="padding:100px 20px;">
+  <button class="collapsible collapsed" id=collapsible5 style="top:270px;left:530px;">Flynn</button>
+  <div class="content" id="content5" style="top:3535px;left:370px;">
+  <p>和邻国西尔多关系微妙，因历史遗留问题贫富差距极大，<br>
+    在战争中处于受援助方，之后一直在国际上处于一个可有可无的状态。<br>
+    曾经有领导人励志改变现状，但似乎效果并不显著。
+  </p>
+  </div>
+  <button class="collapsible collapsed" id="collapsible2" style="top:330px;left:600px;">Sildo</button>
+  <div class="content" id="content2" style="top:3435px;left:860px;">
+  <p>与弗林相邻的国家，历史虽然不像岷琅那样能够写上厚厚一本，却也有其值得考究的地方.<br>
+    曾因率先发明使用蒸汽动力的机器而迅速发展，疯狂扩张版图，但在战争后大势已去。<br>
+    如今它正不断尝试争取回曾经的地位，不过当今的世界体系似乎容不得它继续发挥。
+  </p>
+  </div>
+  <button class="collapsible collapsed" id="collapsible3" style="top:500px;left:530px;">Iturlin</button>
+  <div class="content" id="content3" style="top:3770px;left:620px;">
+  <p>存在感并不强烈，似乎也拥有很长一段历史，不过属于曾经在这片土地上的已经覆灭的古国，<br>
+    内治混乱，黑帮林立，管理层与其保持着一种微妙的平衡，<br>
+    在众黑帮进行了一场大清洗后，局势有所稳定。
+  </p>
+  </div>
+  <button class="collapsible collapsed" id="collapsible4" style="top:200px;left:-10px;">Belukar</button>
+  <div class="content" id="content4" style="top:3160px;left:150px;">
+  <p>历史只有三页，原本只是一片荒地的国家，<br>
+    在西尔多人到来后迅速发展起来，因移民的西尔多人与西尔多皇室产生利用冲突，后独立。<br>
+    世界上第一个开始使用电力的国家，国力因此扶摇直上，又在战争中获利，霸主一直保持至今。<br>
+  </p>
+  </div>
+  <button class="collapsible collapsed" id="collapsible5" style="top:170px;left:280px;">Norvège</button>
+  <div class="content" id="content5" style="top:3280px;left:890px;">
+  <p>没有过分参与战争，因此没有受到太多损失，也没有因此得以发展。<br>
+    经济水平一般，但居民幸福指数很高，生活节奏很慢。
+  </p>
+  </div>
+  <button class="collapsible collapsed" id="collapsible6" style="top:70px;left:40px;">Dramako</button>
+  <div class="content" id="content6" style="top:3150px;left:510px;">
+  <p>纬度高，因此终年严寒，战争之后主要产业受邻国贝鲁卡的操控，<br>
+    离天堂太远，离贝鲁卡太近。
+  </p>
+  </div>
+</div>
+
+<div id="section7"class="container-fluid bg-secondary text-white"style="padding:100px 20px;">
+<h1 class="display-2">东部地区</h1>
+<p style="color:#d0c7bc; text-align:center"><br>
+  <br>
+  东部大陆区，该区域暂未开放。<br>
+    <br>
+    我已经很快很快地在写了！但是剧情还没到这里！<br>
+    <br>
+  </p>
+</div>
+
+<div id="section8"class="container-fluid bg-dark text-white"style="padding:100px 20px;">
+<h1 class="display-2">南部地区</h1>
+<p style="color:#d0c7bc; text-align:center"><br>
+  <br>
+  南部大洋区，该区域暂未开放。<br>
+    <br>
+    我已经很快很快地在写了！但是剧情还没到这里！<br>
+    <br>
+  </p>
+</div>
+
+<div id="section9"class="container-fluid text-dark section4-with-background" style="padding:100px 20px;">
+<h1 class="display-2">通行注意事项</h1>
+<p style="color:#343434; text-align:center"><br>
+  <br>
+  又称“各国旅游防作死指南”。<br>
+    <br>
+    总之，这能方便你更低成本地了解这些国家。<br>
+    <br>
+  </p>
+</div>
+
+<div id="section10"class="container-fluid text-dark bg-secondary" style="padding:100px 20px;">
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <strong>岷琅</strong>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p><strong>本土区域</strong><br>
+          除了条例规定的不允许带入境内的物品外，额外强调不允许携带枪支进入岷琅本土<br>
+          不要尝试在这个国家犯罪<br>
+          如果你拥有了公民权，那么恭喜你，你将享受到全世界性价比最高的各项保障服务，包括但不限于人身安全保障，医疗健康保障，最低限度生活保障<br>
+          这是世界上最难获取公民权的国家之一<br>
+          因为领土幅员辽阔，岷琅拥有非常多样的自然风光和人文环境，请相信这里的食物一定比你去到的如何一个地方都好吃，而且种类还多<br>
+          <br>
+        </p>
+        <p><strong>特殊管理区-行港/绵祖</strong><br>
+          这里是唯二会出现枪支的岷琅城市，但并不是说你可以随意把枪带上街，你得先拿到许可证<br>
+          许可证的审核非常严格，按理来说<br>
+          赌博合法，但是在岷琅仅限于这里<br>
+          有黑帮出没，请小心，他们一般不会随便向你要“保护费”，但是如果你在这里遇到困难，求助他们一定比求助警察有用<br>
+          黑帮成员当然不会把“我是黑帮”写在脸上，不过不同黑帮成员一般会有一些普遍的标识，比如统一在身体某个部位纹上特殊的图案，或者特地抽某个品牌的雪茄等等<br>
+          这里相对自由，同样也没那么安全<br>
+      </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <strong>Sildo</strong>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p><strong>本土区域</strong><br>
+            理论上是不能出现枪支的，但是理论上<br>
+            虽然皇室现在的权力已经被剥夺走了大半，但皇室依然是皇室，是全国人民的信仰，请对他们保持最高程度的尊重<br>
+            这里的食物填饱肚子是没有问题的<br>
+            公民权并不难得，从他们的大学里毕业，然后找个当地的工作就成了，这是最简单的方法<br>
+            物价有些小贵
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <strong>Belukar</strong>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p><strong>本土区域</strong><br>
+            唯一不管控枪支的国家，虽然你可能人畜无害，但是保不准别人来害你<br>
+            没事别找警察，有事也尽量别找，尤其是你不是本地人的话<br>
+            公民权并不难，在这里工作几年，有房就可以拿<br>
+            物价很贵，买东西请三思<br>
+            如果你有钱，请忽视除了第一条以外的所有，如果你请了保镖，那都可以无视<br>
+            如果你想犯事，只要保证不在被逮到的时候被打死，你命是至少大概率保住了<br>
+            听上去这里很混乱？并不，别忘了这是世界霸主，无论如何，你会想待在这里的<br>
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+          <strong>Iturlin</strong>
+        </button>
+      </h2>
+      <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p><strong>本土区域</strong><br>
+            对枪支的管控不严，但是大型武器私自持有需要登记<br>
+            在逛街之前仔细了解当地的势力划分，并熟知他们各自的规矩，别触了当地黑帮的霉头，你不会高兴的<br>
+            大部分黑帮成员是教徒，请保持尊重，不要亵渎他们的神明<br>
+            甜品很甜，能甜死你，享用下午茶时记得点些解腻的饮品<br>
+            如果在街上遇到暴力事件，请就近寻找店铺躲藏，他们不会将事件波及到无辜民众<br>
+            遇到困难请找当地黑帮，当然，最好找当地最大的黑帮，一旦你和某个黑帮有了接触，就会被认为是与他们有关的一份子，如果黑帮太弱小，发生冲突时你有可能会被波及<br>
+        </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p><br>
+  </p>
+  <a class="btn btn-dark" href="期中作业2.html" role="button">返回首页</a>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+  </body>
+</html>

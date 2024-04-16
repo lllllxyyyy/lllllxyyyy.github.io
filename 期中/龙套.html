@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>宝藏角色</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style type="text/css">
+      .scrollspy-example {
+         position: relative;
+         height: 350px;
+         overflow: auto;
+       }
+       .section1-with-background {
+                background-image: url('15.jpg');
+                background-size: cover;
+                background-position: center;
+                display: flex;
+        }
+        .section2-with-background {
+                 background-image: url('23.jpg');
+                 background-size: cover;
+                 background-position: center;
+                 display: flex;
+         }
+         .accordion-item {
+               display: flex;
+               width: 1200px;
+         }
+         .accordion-collapse {
+
+               overflow: hidden;
+         }
+         .accordion-header {
+               cursor: pointer;
+
+             }
+        body {
+          padding-left: 13em;
+        }
+         h1{
+           font-family: Helvetica, Geneva, Arial,
+                 SunSans-Regular, sans-serif }
+         ul a {
+                 text-decoration: none }
+         a:visited {
+                 color: #doc7bc }
+          .fixed-list {
+                  position: fixed;
+                  left: 0;
+                  top: 15%; /* 可以根据需要调整垂直位置 */
+                  transform: translateY(-50%); /* 让列表垂直居中 */
+                  padding: 20px;
+              }
+  </style>
+  </head>
+    <body data-bs-spy="scroll"data-bs-target=".navbar"data-bs-offset="50">
+
+    <ul class="list-group list-group-flush fixed-list">
+        <a href="期中作业2.html" class="list-group-item list-group-item-action">返回主页</a>
+        <a href="主要人物.html" class="list-group-item list-group-item-action">主要人物</a>
+        <a href="次要人物.html" class="list-group-item list-group-item-action">次要人物</a>
+    </ul>
+
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-center">
+  <div class="container-fluid">
+     <ul class="navbar-nav">
+       <li class="nav-item">
+        <a class="nav-link"href="#section1">特别出演</a>
+       </li>
+     <li class="nav-item">
+       <a class="nav-link"href="#section2">龙套</a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <div id="section1"class="container-fluid bg-dark text-white "style="padding:100px 20px;">
+    <h1 class="display-2">特别出演</h1>
+    <p style="color:#d0c7bc"><br>
+      不能说是龙套，虽然出场不多，但他们都有自己的故事<br>
+      <br>
+      至少我把他们的设定写全了<br>
+      <br>
+    </p>
+  </div>
+    <div id="section4"class="container-fluid bg-dark text-white section1-with-background"style="padding:100px 20px;">
+    <div class="accordion" id="accordionExample1">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <strong>Gru bianca</strong>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+      <div class="accordion-body">
+        <div class="row">
+          <div class="col-2">
+            <div id="list-exampleOne" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">基础资料</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">喜好与厌恶</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">性格</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">简介</a>
+            </div>
+          </div>
+          <div class="col-10">
+            <div data-bs-spy="scroll" data-bs-target="#list-exampleOne" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="list-item-1">基础资料</h4>
+              <p>姓名：Gru bianca<br>
+                性别：男<br>
+                生日：9月26日<br>
+                年龄：17<br>
+                身高：165</p>
+              <h4 id="list-item-2">喜好与厌恶</h4>
+              <p>喜好：医学研究，医学实验，小白兔，奇怪颜色的药水，Criatti制作的甜点；<br>
+                厌恶：医学实验，医生；
+              </p>
+              <h4 id="list-item-3">性格</h4>
+              <p>机灵聪明，活泼开朗的小男孩，总是想要温暖他人。<br>
+                依然有着坚决的一面，对待敌人毫不手软。
+              </p>
+              <h4 id="list-item-4">简介</h4>
+              <p>来自Persca，7岁的时候和父母走失被拐卖到地下黑市，期间认识了同样被拐进来的比自己小一岁的女孩，两人互相视对方为依托。<br>
+                后被一家慈善医疗机构救助，接受治疗。<br>
+                女孩的身体状况逐渐变差，精神出现问题，除了男孩之外有人接近都会表现出强烈的敌意。男孩能做的就只有陪在她身边，安抚她的情绪。<br>
+                后被Criatti接走，在衔尾蛇内接受新的治疗。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <strong>Dew bianca</strong>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+      <div class="accordion-body">
+        <div class="row">
+          <div class="col-2">
+            <div id="list-exampleTwo" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">基础资料</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">喜好与厌恶</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">性格</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">简介</a>
+            </div>
+          </div>
+          <div class="col-10">
+            <div data-bs-spy="scroll" data-bs-target="#list-exampleTwo" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="list-item-1">基础资料</h4>
+              <p>姓名：Dew bianca<br>
+                性别：女<br>
+                生日：4月18日<br>
+                年龄：16<br>
+                身高：155</p>
+              <h4 id="list-item-2">喜好与厌恶</h4>
+              <p>喜好：？？？；<br>
+                厌恶：？？？；
+              </p>
+              <h4 id="list-item-3">性格</h4>
+              <p>？？？<br>
+                （考虑到对象精神状态不佳，无法对外界做出正常回应，此栏暂时空缺）
+              </p>
+              <h4 id="list-item-4">简介</h4>
+              <p>？？？<br>
+                （无法得知该对象明确的经历，以下内容采自与其关系较近的Gru bianca和Moster的讲述）<br>
+                “该患者曾长时间受到非人的虐待，可以确定的是她身上所发生的一切都非她所愿，且外部环境不能让她感受到放松，长此以往，她出现了幻觉，并且因为脑部损伤，治疗效果十分有限。”<br>
+                “Lilith……不，Dew bianca她现在已经好很多了，除了我之外，已经能认出来Moster，Criatti和Kusika了，等她再好些了，我就带她去这大房子里四处走走，多认识认识其他人……”<br>
+                <br>
+                （一行手写字）<br>
+                “你管那个地方叫‘慈善医疗机构’？真严谨，收留被拐到黑市来的孩子，还给他们用有钱人都买不了的药，对对对，要是没有每天都把尸体推进焚化炉，我就信了你的鬼话了。”<br>
+                （给个面子，Criatti，老师要看的）
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <strong>서립연</strong>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+      <div class="accordion-body">
+        <div class="row">
+          <div class="col-2">
+            <div id="list-exampleThree" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">基础资料</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">喜好与厌恶</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">性格</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">简介</a>
+            </div>
+          </div>
+          <div class="col-10">
+            <div data-bs-spy="scroll" data-bs-target="#list-exampleThree" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="list-item-1">基础资料</h4>
+              <p>姓名：서립연<br>
+                性别：男<br>
+                生日：10月2日<br>
+                年龄：21<br>
+                身高：178</p>
+              <h4 id="list-item-2">喜好与厌恶</h4>
+              <p>喜好：滑板，弹吉他，打电玩；<br>
+                厌恶：麦片，牛奶；<br>
+              </p>
+              <h4 id="list-item-3">性格</h4>
+              <p>非常有活力的青年，鬼点子很多；<br>
+              </p>
+              <h4 id="list-item-4">简介</h4>
+              <p>“逆时针之镜”rapper，和안택원是从小的朋友，梦想是成为一名偶像。<br>
+                在出道后因为公司包装，两个人的关系不再像之前那样亲近，但依然相互支持着对方。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <strong>기가우</strong>
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+        <div class="accordion-body">
+          <div class="row">
+            <div class="col-2">
+              <div id="list-exampleFour" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">基础资料</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">喜好与厌恶</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">性格</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">简介</a>
+              </div>
+            </div>
+            <div class="col-10">
+              <div data-bs-spy="scroll" data-bs-target="#list-exampleFour" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                <h4 id="list-item-1">基础资料</h4>
+                <p>姓名：기가우<br>
+                  性别：男<br>
+                  生日：8月28日<br>
+                  年龄：17<br>
+                  身高：174</p>
+                <h4 id="list-item-2">喜好与厌恶</h4>
+                <p>喜好：玩偶，小动物，甜食，布偶服；<br>
+                  厌恶：下等人，穷鬼；<br>
+                </p>
+                <h4 id="list-item-3">性格</h4>
+                <p>古灵精怪，乖戾且恶劣的少年，似乎没有什么是非对错的观念，想做什么就做什么。
+                </p>
+                <h4 id="list-item-4">简介</h4>
+                <p>逆时针之镜”忙内担当，父亲就是签约他们团的娱乐公司的老板。<br>
+                  似乎被父亲当成了赚钱的工具，一直被培养喜欢可爱的东西，在大人面前装可爱卖萌，因此心智上有些女性化，小学的时候被人说成“娘娘腔”。<br>
+                  无法排解情绪的他选择了通过捉弄别人以达到自己不再会被别人欺负的结果。<br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+            <strong>하희진</strong>
+          </button>
+        </h2>
+        <div id="collapse9" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-2">
+                <div id="list-example9" class="list-group">
+                  <a class="list-group-item list-group-item-action" href="#list-item-1">基础资料</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-2">喜好与厌恶</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-3">性格</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-4">简介</a>
+                </div>
+              </div>
+              <div class="col-10">
+                <div data-bs-spy="scroll" data-bs-target="#list-example9" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                  <h4 id="list-item-1">基础资料</h4>
+                  <p>姓名：하희진<br>
+                    性别：女<br>
+                    生日：9月15日<br>
+                    年龄：35<br>
+                    身高：168</p>
+                  <h4 id="list-item-2">喜好与厌恶</h4>
+                  <p>喜好：工作，或者说自己的事业；<br>
+                    厌恶：耽误工作；<br>
+                  </p>
+                  <h4 id="list-item-3">性格</h4>
+                  <p>一本正经非常敬业的女强人，对待工作非常认真，也很看重“逆时针之镜”。
+                  </p>
+                  <h4 id="list-item-4">简介</h4>
+                  <p>“逆时针之镜”的经纪人，很有本事的女强人，将“逆时针之镜”视如己出。<br>
+                    目前处于离婚状态，独自养育5岁的女儿，但因为醉心工作，甚少基于她陪伴。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+              <strong>기성우</strong>
+            </button>
+          </h2>
+          <div id="collapse10" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-2">
+                  <div id="list-example10" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">基础资料</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">喜好与厌恶</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">性格</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">简介</a>
+                  </div>
+                </div>
+                <div class="col-10">
+                  <div data-bs-spy="scroll" data-bs-target="#list-example10" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                    <h4 id="list-item-1">基础资料</h4>
+                    <p>姓名：기성우<br>
+                      性别：男<br>
+                      生日：6月16日<br>
+                      年龄：24<br>
+                      身高：181</p>
+                    <h4 id="list-item-2">喜好与厌恶</h4>
+                    <p>喜好：听歌；<br>
+                      厌恶：父亲的安排；<br>
+                    </p>
+                    <h4 id="list-item-3">性格</h4>
+                    <p>忧郁，偏激，且自卑，很会伪装自己；
+                    </p>
+                    <h4 id="list-item-4">简介</h4>
+                    <p>淇家的私生子，기가우同父异母的哥哥，被迫隐瞒身份，在夜总会工作。<br>
+                      知道自己有一个同父异母的在当偶像的弟弟，但기가우并不知道他的存在。想要将他的不幸施加到弟弟身上，但一直没有找到机会。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                <strong>May Kim</strong>
+              </button>
+            </h2>
+            <div id="collapse12" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-2">
+                    <div id="list-example12" class="list-group">
+                      <a class="list-group-item list-group-item-action" href="#list-item-1">基础资料</a>
+                      <a class="list-group-item list-group-item-action" href="#list-item-2">喜好与厌恶</a>
+                      <a class="list-group-item list-group-item-action" href="#list-item-3">性格</a>
+                      <a class="list-group-item list-group-item-action" href="#list-item-4">简介</a>
+                    </div>
+                  </div>
+                  <div class="col-10">
+                    <div data-bs-spy="scroll" data-bs-target="#list-example12" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                      <h4 id="list-item-1">基础资料</h4>
+                      <p>姓名：May Kim<br>
+                        性别：女<br>
+                        生日：3月7日<br>
+                        年龄：28<br>
+                        身高：170</p>
+                      <h4 id="list-item-2">喜好与厌恶</h4>
+                      <p>喜好：枪械，巧克力，苹果；<br>
+                        厌恶：医疗防护服，注射器；<br>
+                      </p>
+                      <h4 id="list-item-3">性格</h4>
+                      <p>混乱善良，会不惜一切保护在意的人，果断勇敢；
+                      </p>
+                      <h4 id="list-item-4">简介</h4>
+                      <p>？？？<br>
+                        （在与对象充分沟通后，决定隐藏其以及同伴Annie的个人经历）
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                  <strong>Amondino Japela</strong>
+                </button>
+              </h2>
+              <div id="collapse11" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col-2">
+                      <div id="list-example11" class="list-group">
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">基础资料</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-2">喜好与厌恶</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-3">性格</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-4">简介</a>
+                      </div>
+                    </div>
+                    <div class="col-10">
+                      <div data-bs-spy="scroll" data-bs-target="#list-example11" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                        <h4 id="list-item-1">基础资料</h4>
+                        <p>姓名：Amondino Japela<br>
+                          性别：男<br>
+                          生日：10月11日<br>
+                          年龄：32<br>
+                          身高：190</p>
+                        <h4 id="list-item-2">喜好与厌恶</h4>
+                        <p>喜好：格斗，枪械，机械制造，红酒；<br>
+                          厌恶：穿得严严实实地去应酬一些大人物；<br>
+                        </p>
+                        <h4 id="list-item-3">性格</h4>
+                        <p>直爽，但并不是精神大条，相反，他直觉相当准，能够精准捕捉的他人的情绪；
+                        </p>
+                        <h4 id="list-item-4">简介</h4>
+                        <p>Iturlin人，曾因为喜欢特意去把皮肤晒黑了。<br>
+                          实在是不想去做各大企业里西装革履的工作，背着家人偷偷跑去地下格斗场玩过，没想到有人为了赢背后东家耍阴招，他欠了不少钱。格斗场的人用他的家人威胁，他不得以去求衔尾蛇。<br>
+                          想着受人恩惠无以为报，自己又没有工作，干脆就加入衔尾蛇打点杂，因为是难得的工科生，很快就得到了重用。<br>
+                          非常看不顺眼Gabriel，属于在组织见着了都要瞪他两眼那种。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+    </div>
+  </div>
+
+  <div id="section2"class="container-fluid bg-secondary"style="padding:100px 20px;">
+    <h1 class="display-2">龙套</h1>
+    <p style="color:#d0c7bc"><br>
+      目前来说确实不太重要的角色，与其他更重要的角色有依附关系<br>
+      <br>
+      设定比较单一，所有行为只围绕一个目标<br>
+      <br>
+    </p>
+  </div>
+    <div id="section5"class="container-fluid bg-secondary section2-with-background"style="padding:100px 20px;">
+    <div class="accordion" id="accordionExample2">
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+        <strong>Luya Tavel</strong>
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+      <div class="accordion-body">
+        <div class="row">
+          <div class="col-2">
+            <div id="list-exampleFive" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">基础资料</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">喜好与厌恶</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">性格</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">简介</a>
+            </div>
+          </div>
+          <div class="col-10">
+            <div data-bs-spy="scroll" data-bs-target="#list-exampleFive" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="list-item-1">基础资料</h4>
+              <p>姓名：Luya Tavel<br>
+                性别：女<br>
+                生日：2月5日<br>
+                年龄：19<br>
+                身高：168</p>
+              <h4 id="list-item-2">喜好与厌恶</h4>
+              <p>喜好：甜甜圈，气泡水，缅因猫，小提琴，言情小说；<br>
+                厌恶：酒精饮料，悲情戏剧，狗；
+              </p>
+              <h4 id="list-item-3">性格</h4>
+              <p>娇生惯养的大小姐，有点傻白甜，喜欢使小性子；
+              </p>
+              <h4 id="list-item-4">简介</h4>
+              <p>父母是知名奢侈品牌的创始人，与Isha的父亲签约长期合作，她也与Isha关系很好。<br>
+                社交小白，但是就是喜欢和Isha一起去凑热闹，兴许不太遵守规矩的女孩更受绅士欢迎？
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        <strong>Anna Joffrey</strong>
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+      <div class="accordion-body">
+        <div class="row">
+          <div class="col-2">
+            <div id="list-exampleSix" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">基础资料</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">喜好与厌恶</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">性格</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">简介</a>
+            </div>
+          </div>
+          <div class="col-10">
+            <div data-bs-spy="scroll" data-bs-target="#list-exampleSix" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="list-item-1">基础资料</h4>
+              <p>姓名：Anna Joffrey<br>
+                性别：女<br>
+                生日：2月8日<br>
+                年龄：23<br>
+                身高：174</p>
+              <h4 id="list-item-2">喜好与厌恶</h4>
+              <p>喜好：酒类饮品，黑巧克力，爵士乐；<br>
+                厌恶：阿谀奉承的人，扑克牌，糖果；<br>
+              </p>
+              <h4 id="list-item-3">性格</h4>
+              <p>霸气侧漏的女A一枚，看重情谊，也因为在朋友中年龄最大，一直担当着大姐姐的角色；
+              </p>
+              <h4 id="list-item-4">简介</h4>
+              <p>出身Guillermo，但是从中学阶段就在法国生活，家境虽然比不上伊莎和露娅，但也还算不错。<br>
+                在学校的聚会里认识了伊莎，并且被她落落大方的举止和优雅高贵的气质深深吸引。<br>
+                后来跟着伊莎又认识了露娅，三个人经常在一起，结下了很深的友谊。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        <strong>김수쇼</strong>
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+      <div class="accordion-body">
+        <div class="row">
+          <div class="col-2">
+            <div id="list-exampleSeven" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">基础资料</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">喜好与厌恶</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">性格</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">简介</a>
+            </div>
+          </div>
+          <div class="col-10">
+            <div data-bs-spy="scroll" data-bs-target="#list-exampleSeven" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="list-item-1">基础资料</h4>
+              <p>姓名：김수쇼<br>
+                性别：男<br>
+                生日：7月3日<br>
+                年龄：22<br>
+                身高：178</p>
+              <h4 id="list-item-2">喜好与厌恶</h4>
+              <p>喜好：唱歌，编曲；<br>
+                厌恶：有钱的上层阶级；<br>
+              </p>
+              <h4 id="list-item-3">性格</h4>
+              <p>本质上应该是个善良孩子，但是因为没钱被欺压得有些扭曲了；<br>
+                有点类似既怕朋友苦，又怕朋友开路虎的那种类型。<br>
+              </p>
+              <h4 id="list-item-4">简介</h4>
+              <p>曾经是练习生，但是因为家里没钱支撑不起他的生活费和学费，他被迫放弃梦想早早出来打工。<br>
+                后来阴差阳错成为了“逆时针之镜”的助理，想要借此机会完成他当偶像的梦想。<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          <strong>Annie Kim</strong>
+        </button>
+      </h2>
+      <div id="collapseEight" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+        <div class="accordion-body">
+          <div class="row">
+            <div class="col-2">
+              <div id="list-exampleEight" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">基础资料</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">喜好与厌恶</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">性格</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">简介</a>
+              </div>
+            </div>
+            <div class="col-10">
+              <div data-bs-spy="scroll" data-bs-target="#list-exampleEight" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                <h4 id="list-item-1">基础资料</h4>
+                <p>姓名：Annie Kim<br>
+                  性别：女<br>
+                  生日：5月18日<br>
+                  年龄：23<br>
+                  身高：168</p>
+                <h4 id="list-item-2">喜好与厌恶</h4>
+                <p>喜好：甜筒，果酱；<br>
+                  厌恶：过去的记忆；<br>
+                </p>
+                <h4 id="list-item-3">性格</h4>
+                <p>温顺软弱，容易失控，但情绪失控也只能哭；
+                </p>
+                <h4 id="list-item-4">简介</h4>
+                <p>？？？<br>
+                  （同May一样，考虑到身份特殊性，我们封存了她的资料，总之，别再刺激她了）
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script>
+    // 获取所有手风琴项目
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    // 遍历每个项目，添加事件监听器
+    accordionItems.forEach(item => {
+      item.addEventListener('click', () => {
+        if (!item.classList.contains('active')) {
+          closeAllItems();
+          openItem(item);
+        } else {
+          closeItem(item);
+        }
+      });
+    });
+
+    // 展开手风琴项目
+    function openItem(item) {
+      item.classList.add('active');
+      item.querySelector('.accordion-collapse').style.display = 'block';
+    }
+
+    // 收起手风琴项目
+    function closeItem(item) {
+      item.classList.remove('active');
+      item.querySelector('.accordion-collapse').style.display = 'none';
+    }
+
+    // 收起所有手风琴项目
+    function closeAllItems() {
+      accordionItems.forEach(item => {
+        item.classList.remove('active');
+        item.querySelector('.accordion-collapse').style.display = 'none';
+      });
+    }
+  </script>
+
+  </body>
+</html>
